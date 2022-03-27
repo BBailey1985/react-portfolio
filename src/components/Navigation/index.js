@@ -1,26 +1,24 @@
 import React from "react";
 
-function Nav() {
+function Navigation(props) {
+  const {currentLink, setCurrentLink} = props;
   return (
-    <header className="flex-row">
-      <h1 className="flex-row ml-1">Brandon Bailey</h1>
-      <nav>
+    <nav>
         <ul className="flex-row">
-          <li className="mx-2">
-            <a href="#about-me">About Me</a>
+          <li className={currentLink === 'about' ? 'mx-2 navActive' : 'mx-2'}>
+            <span onClick={() => setCurrentLink('about')}>About Me</span>
           </li>
-          <li className="mx-2">
-            <a href="#projects">Portfolio</a>
+          <li className={currentLink === 'portfolio' ? 'mx-2 navActive' : 'mx-2'}>
+            <span onClick={() => setCurrentLink('portfolio')}>Portfolio</span>
           </li>
-          <li className="mx-2">
-            <a href="#contact">Contact</a>
+          <li className={currentLink === 'Contact' ? 'mx-2 navActive' : 'mx-2'}>
+            <span onClick={() => setCurrentLink('Contact')}>Contact</span>
           </li>
-          <li className="mx-2">
-            <a href="#resume">Resume</a>
+          <li className={currentLink === 'resume' ? 'mx-2 navActive' : 'mx-2'}>
+            <span onClick={() => setCurrentLink('resume')}>Resume</span>
           </li>
         </ul>
       </nav>
-    </header>
-  );
+  )
 }
-export default Nav;
+export default Navigation;
