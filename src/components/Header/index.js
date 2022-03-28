@@ -1,11 +1,15 @@
 import React from "react";
 import Navigation from "../Navigation";
 
-function Header() {
+function Header(props) {
+  const { currentLink, setCurrentLink } = props;
   return (
     <header className="flex-row">
       <h1>Brandon Bailey</h1>
-      <Navigation></Navigation>
+      <Navigation>
+        currentLink={currentLink}
+        setCurrentLink={setCurrentLink}
+      </Navigation>
     </header>
   );
 }

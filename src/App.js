@@ -1,18 +1,37 @@
+import React, { useState } from "react";
 import About from "./components/About";
-import Navigation from "./components/Navigation";
 import Header from "./components/Header";
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Footer from "./components/Footer";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+import Resume from "./components/Resume";
 
 function App() {
+  const [currentLink, setCurrentLink] = useState('about');
+
+  //select with tab is clicked and then generate
+  const generateLink = () => {
+    switch (currentLink) {
+      case 'about':
+        return <About />;
+      case 'portfolio':
+        return <Portfolio />;
+      case 'contact':
+        return <Contact />;
+      case 'resume':
+        return <Resume />;
+      default:
+        return <About />;
+    }
+  }
   return (
-    // <Router>
       <div>
-        <Header></Header>
+        <Header currentLink={currentLink} setCurrentLink={setCurrentLink}></Header>
         <main>
-          <About></About>
+          {generateLink()}
         </main>
+        <Footer></Footer>
       </div>
-    // </Router>
   );
 }
 

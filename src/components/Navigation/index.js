@@ -11,8 +11,8 @@ function Navigation(props) {
           <li className={currentLink === 'portfolio' ? 'mx-2 navActive' : 'mx-2'}>
             <span onClick={() => setCurrentLink('portfolio')}>Portfolio</span>
           </li>
-          <li className={currentLink === 'Contact' ? 'mx-2 navActive' : 'mx-2'}>
-            <span onClick={() => setCurrentLink('Contact')}>Contact</span>
+          <li className={currentLink === 'contact' ? 'mx-2 navActive' : 'mx-2'}>
+            <span onClick={() => setCurrentLink('contact')}>Contact</span>
           </li>
           <li className={currentLink === 'resume' ? 'mx-2 navActive' : 'mx-2'}>
             <span onClick={() => setCurrentLink('resume')}>Resume</span>

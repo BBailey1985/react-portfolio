@@ -4,8 +4,8 @@ function About() {
   return (
     <section id="about-me" class="about-me">
       <h2>About Me</h2>
-      <div class="img">
-        <img src="./assets/images/file.jpeg" alt="Me at an Astros game" />
+      <div className="about-me-pic">
+        <img src={require("../../assets/images/file.jpeg")} alt="Me at an Astros game" />
       </div>
       <div class="about-me-data">
         <p>Hi, im Brandon. I am currently a Master Flight Planning Specialist
@@ -19,3 +19,4 @@ function About() {
 }
 
 export default About;
+
