@@ -1,7 +1,7 @@
 import React from "react";
 
 function Navigation(props) {
-  const {currentLink, setCurrentLink} = props;
+  const { currentLink, setCurrentLink } = props;
   return (
     <nav>
         <ul className="flex-row">
@@ -18,6 +18,7 @@ function Navigation(props) {
             <span onClick={() => setCurrentLink('resume')}>Resume</span>
           </li>
         </ul>
+        
       </nav>
   )
 }

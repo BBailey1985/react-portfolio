@@ -1,37 +1,39 @@
 import React, { useState } from "react";
-import About from "./components/About";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
+import About from "./components/About";
 import Resume from "./components/Resume";
+// import Contact from "./components/Contact";
+import Project from "./components/Project";
+import ContactForm from "./components/Contact";
+
+
 
 function App() {
-  const [currentLink, setCurrentLink] = useState('about');
-
-  //select with tab is clicked and then generate
+  const [currentLink, setCurrentLink] = useState("about");
+  
   const generateLink = () => {
     switch (currentLink) {
-      case 'about':
+      case "about":
         return <About />;
-      case 'portfolio':
-        return <Portfolio />;
       case 'contact':
-        return <Contact />;
-      case 'resume':
+        return <ContactForm />;
+      case "resume":
         return <Resume />;
+      case "portfolio":
+        return <Project />;
       default:
         return <About />;
     }
-  }
-  return (
-      <div>
-        <Header currentLink={currentLink} setCurrentLink={setCurrentLink}></Header>
-        <main>
-          {generateLink()}
-        </main>
-        <Footer></Footer>
-      </div>
+  };
+   return (
+    <div>
+    <Header currentLink={currentLink} setCurrentLink={setCurrentLink}></Header>
+    <main>
+      {generateLink()}
+    </main>
+    <Footer></Footer>
+  </div>
   );
 }
 

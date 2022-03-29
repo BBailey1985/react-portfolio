@@ -6,10 +6,10 @@ function Header(props) {
   return (
     <header className="flex-row">
       <h1>Brandon Bailey</h1>
-      <Navigation>
+      <Navigation
         currentLink={currentLink}
         setCurrentLink={setCurrentLink}
-      </Navigation>
+      ></Navigation>
     </header>
   );
 }

@@ -6,7 +6,7 @@ root {
 
 main {
 	margin: 0 auto;
-	max-width: 90%;
+	max-width: 100%;
   padding: 50px 30px;
 }
 
@@ -30,7 +30,7 @@ header nav ul {
 }
 
 header span {
-  padding: 12px 60px;
+  padding: 12px 15px;
   font-style: oblique;
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   
@@ -94,4 +94,6 @@ body {
   padding-bottom: var(--spacing-two);
 }
 
-
+.navActive {
+  color: #18afca;
+}
