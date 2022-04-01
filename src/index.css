@@ -163,11 +163,6 @@ textarea {
   justify-content: flex-end;
 }
 
-portfolio {
-  display: flex
-
-}
-
 .card {
 	width: 25%;
 	text-align: center;
@@ -214,6 +209,19 @@ footer {
 	color: var(--quinary);
 }
 
+.lower-spacing {
+  margin-bottom: var(--spacing-five);
+}
+
+.h1resume {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: var(--spacing-five);
+}
+
+.h3resume {
+  text-align: left;
+}
 
 .mx-1 {
   margin-right: var(--spacing-one);
