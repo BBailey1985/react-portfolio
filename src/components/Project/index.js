@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState} from "react";
 
-function Project() {
+function Project(props) {
+  const currentProject = use
 
 }
 
