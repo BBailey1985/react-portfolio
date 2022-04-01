@@ -3,9 +3,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Resume from "./components/Resume";
-// import Contact from "./components/Contact";
 import Project from "./components/Project";
 import ContactForm from "./components/Contact";
+import Portfolio from "./components/Portfolio";
 
 
 
@@ -21,7 +21,7 @@ function App() {
       case "resume":
         return <Resume />;
       case "portfolio":
-        return <Project />;
+        return <Portfolio />;
       default:
         return <About />;
     }

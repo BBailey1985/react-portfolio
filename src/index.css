@@ -7,6 +7,7 @@ root {
 main {
 	margin: 0 auto;
   display: flex;
+  justify-content: center;
 	max-width: 100%;
   padding: 50px 30px;
   background-color: beige;
@@ -20,8 +21,8 @@ main {
 header {
   padding: 25px;
   display: flex;
-  color: #f4f3ee;
-  background-color: #463f3a;
+  color: #463f3a; 
+  background-color: beige;
   justify-content: space-between;  
   flex-wrap: wrap;
   margin: 0;
@@ -162,12 +163,57 @@ textarea {
   justify-content: flex-end;
 }
 
+portfolio {
+  display: flex
+
+}
+
+.card {
+	width: 25%;
+	text-align: center;
+}
+
+.card-title {
+	font-size: 1.5rem;
+	color: var(--quaternary);
+}
+
+.card-text {
+	font-size: 0.75rem;
+	height: 8rem;
+}
+
+.card-image {
+	max-width: 300px;
+	max-height: 300px;
+}
+
+.card-link {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 0.70rem;
+}
+
 footer {
   background-color: beige;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+.image {
+	width: auto;
+	height: auto;
+	max-width: 500px;
+	max-height: 500px;
+	padding: 50px;
+	color: var(--quinary);
+}
+
 
 .mx-1 {
   margin-right: var(--spacing-one);
