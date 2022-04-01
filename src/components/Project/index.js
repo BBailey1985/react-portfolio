@@ -1,6 +1,7 @@
 import React, { useState} from "react";
 import Card from "react-bootstrap/Card";
 
+//project function with props
 function Project(props) {
   const currentProject = useState(props)[0].projects;
 
@@ -10,6 +11,7 @@ function Project(props) {
   const deployedLink = currentProject.deployed;
 
   return (
+    // card 
     <Card style={{ width: "18rem" }}>
 			<Card.Img
 				variant="top"

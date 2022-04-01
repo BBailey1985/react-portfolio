@@ -4,6 +4,7 @@ function Navigation(props) {
   const { currentLink, setCurrentLink } = props;
   return (
     <nav>
+      {/* when clicking on a link, the currentLink state will be updated */}
         <ul className="flex-row">
           <li className={currentLink === 'about' ? 'mx-2 navActive' : 'mx-2'}>
             <span onClick={() => setCurrentLink('about')}>About Me</span>

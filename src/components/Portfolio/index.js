@@ -3,6 +3,7 @@ import { Container, Row } from "react-bootstrap";
 import Project from "../Project";
 
 function Portfolio() {
+  // projects array
   const projects = [
     {
       name: 'Run Buddy',

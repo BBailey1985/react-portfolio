@@ -3,12 +3,10 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Resume from "./components/Resume";
-import Project from "./components/Project";
 import ContactForm from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 
-
-
+//main app component
 function App() {
   const [currentLink, setCurrentLink] = useState("about");
   
