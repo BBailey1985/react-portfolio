@@ -30,10 +30,10 @@ function Portfolio() {
       deployed: 'https://sheltered-coast-08352.herokuapp.com/'
     },
     {
-      name: 'All Things Tech',
-      image: 'tech.png',
-      github: 'https://github.com/BBailey1985/all-things-tech',
-      deployed: 'https://ancient-hamlet-74658.herokuapp.com/'
+      name: 'Puck Wheels',
+      image: 'puckwheels.png',
+      github: 'https://github.com/BBailey1985/puck-wheels',
+      deployed: 'https://mysterious-inlet-33459.herokuapp.com/'
     },
     {
       name: 'Movie Search',
