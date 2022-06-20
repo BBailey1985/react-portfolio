@@ -9,9 +9,9 @@ function About() {
       </div>
       <div className="about-me-data">
         <p>Hi, im Brandon. I am currently a Master Flight Planning Specialist
-          at Universal Weather and Aviation. I am almost to the end of the UT
-          coding bootcamp to learn how to be a full-stack developer. I will be looking
-          to change careers after this bootcamp is over. I am a quick learner and really do
+          at Universal Weather and Aviation. I have just completed the UT
+          coding bootcamp to learn how to be a full-stack developer. I am looking
+          to change careers in development, but hope to stay in aviation. I am a quick learner and really do
           enjoy learning new things. Feel free to reach out!
         </p>
       </div>
